@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   cssModules: true,
   module:{ 
     rules:[ 

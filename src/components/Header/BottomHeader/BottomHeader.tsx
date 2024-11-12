@@ -20,13 +20,13 @@ const BottomHeader = () => {
             <Link href={"#"}>
               <div className="text-white font-medium hover:text-roseWood inline-block whitespace-nowrap p-[18px] text-[13px] relative transform  transition-all duration-300">
                 {el.label}
-                <div className="absolute group-hover:bg-roseWood bottom-[-1px] left-[18px] w-[calc(100%-36px)] bg-current h-[2px] z-50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 will-change-transform" />
+                <div className="absolute group-hover:bg-roseWood bottom-[-1px] left-[18px] w-[calc(100%-36px)] bg-current h-[2px] z-[9999] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 will-change-transform" />
               </div>
             </Link>
 
             {el?.children && el.type === "small" && (
               <div
-                className={`absolute bg-primary border border-[#808080] top-[55px] ps-5 py-6 pe-8 w-44 opacity-0   ${
+                className={`absolute bg-primary border border-[#808080] top-[55px] ps-5 py-6 pe-8 w-44 opacity-0 z-10  ${
                   el.label === hoverText ? "opacity-100" : ""
                 }`}
               >
@@ -67,7 +67,7 @@ const BottomHeader = () => {
                           {data?.type ? (
                             <div className="px-4 flex flex-col justify-center items-center group ">
                               <img
-                                className="rounded-lg"
+                                className="rounded-sm"
                                 src={data.src}
                                 alt="wsd"
                               />
