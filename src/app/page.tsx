@@ -1,5 +1,6 @@
 import { MainLayout } from "@/components/Layout";
-import { HomePage } from "@/pages/HomePage/HomePage";
+import HomePage from "@/pages/HomePage/HomePage";
+
 
 import { Metadata } from "next";
 
