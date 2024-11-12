@@ -26,7 +26,7 @@ const BottomHeader = () => {
 
             {el?.children && el.type === "small" && (
               <div
-                className={`absolute bg-primary border border-[#808080] top-[55px] ps-5 py-6 pe-8 w-44 opacity-0 z-10  ${
+                className={`absolute bg-primary border border-[#808080] top-[55px] ps-5 py-6 pe-8 w-44 opacity-0 z-10 transform  transition-all duration-500  ${
                   el.label === hoverText ? "opacity-100" : ""
                 }`}
               >
@@ -55,7 +55,7 @@ const BottomHeader = () => {
               onMouseEnter={() => setHoverText(data.label)}
               onMouseLeave={() => setHoverText("")}
               key={index}
-              className=" absolute  top-[55px] bg-primary w-full border border-[#808080] "
+              className=" absolute  top-[55px] bg-primary w-full border border-[#808080] z-40 "
             >
               <div className="w-11/12 mx-auto flex justify-center text-white text-[13px] ">
                 {data.children?.map((el, index) => (
